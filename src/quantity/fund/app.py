@@ -5,15 +5,15 @@
 # @File   :app.py
 
 import fund_util
-import util
+from src.quantity.utils import util
 
 
 def any_funds():
-    ret_path = "../../data/ret.txt"
+    ret_path = "../../../data/ret.txt"
     util.clear_file(ret_path)
 
     all_funds = []
-    lines = util.read_file_by_line("../../data/fund_hold.txt")
+    lines = util.read_file_by_line("../../../data/fund_hold.txt")
     for line in lines:
         line_arr = str.split(line, " ")
         if len(line_arr) != 2:

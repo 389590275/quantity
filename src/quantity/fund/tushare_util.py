@@ -1,7 +1,7 @@
 import tushare as ts
 
 # 设置你的Tushare API令牌
-ts.set_token('2319d8d7081f7db682498ca067e3f2c8910e6453ef46baa8556eebc8')
+ts.set_token('xxx')
 # 初始化pro接口
 pro = ts.pro_api()
 
